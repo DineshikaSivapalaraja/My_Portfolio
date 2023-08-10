@@ -50,3 +50,11 @@ footer{
     background-color: #f34;
 }
 
+#academic {
+    display: none;
+}
+
+#academic.show {
+    display:block;
+}
+
