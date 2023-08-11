@@ -1,10 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const academicSection = document.getElementById("academic");
+    const academicSec = document.getElementById("academic");
     const academicLink = document.querySelector('a[href="#academic"]');
   
     academicLink.addEventListener("click", function (event) {
       event.preventDefault();
-      academicSection.classList.toggle("show");
+      academicSec.classList.toggle("show");
     });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const activitiesSec = document.getElementById("activities");
+  const activitiesLink = document.querySelector('a[href="#activities"]');
+
+  activitiesLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    activitiesSec.classList.toggle("show");
+  });
 });
   
