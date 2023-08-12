@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
     academicLink.addEventListener("click", function (event) {
       event.preventDefault();
       academicSec.classList.toggle("show");
+      if(academicSec.classList.contains("show")) {  //adding smooth scrolling after toggling
+        academicSec.scrollIntoView({behavior: "smooth"});
+      }
     });
 });
 
@@ -15,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function () {
   activitiesLink.addEventListener("click", function (event) {
     event.preventDefault();
     activitiesSec.classList.toggle("show");
+    if(activitiesSec.classList.contains("show")) {  //adding smooth scrolling after toggling
+      activitiesSec.scrollIntoView({behavior: "smooth"});
+    }
   });
 });
   
