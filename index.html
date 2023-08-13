@@ -8,167 +8,240 @@
     </head>
 
     <body>
-        <header>
-            <h2>Hello!<br>I'm Dineshika Sivapalaraja </h2>
-            <p>Software Engineering Undergraduate | Passionate Learner | Interested on Data Science</p>
-        </header>
 
-        <nav>
-            <ul>
+        <nav id="desk-nav" class="h-nav">
+            <!-- <div id="pro">Dineshika</div>  -->
+            <div class="h-menu">
+            <ul class="nav_link" id="menu-links">
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT ME</a></li>
                 <li><a href="#academic">ACADEMIC</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#activities">EXTRA-CURRICULAR ACTIVITIES</a></li>
-                <li><a href="#interests">INTERESTS</a></li>
-                <li><a href="#hobbies">HOBBIES</a></li>
+                <li><a href="#activities">EXTRA-CURRICULAR</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#other">OTHERS</a>
+                    <ul class="dropdown">
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#interests-hobbies">Interests and Hobbies</a></li>
+                    </ul>
+                </li>
             </ul>
+            </div>  
         </nav>
 
-        <Section id="about">
-            <h2>About</h2>
+        <section id="profile">
+            <div class="profile-container">
+                <header>
+                    <img src="\Assets\Dineshika.jpg" alt="Dineshika's Profile Picture">
+                    <div class="header-content">
+                        <h2>Hello!<br>I'm Dineshika Sivapalaraja</h2>
+                        <p>Software Engineering Undergraduate | Passionate Learner | Interested in Data Science</p>
+                        <div class="header-buttons">
+                            <a href="\Assets\CV_Dineshika.pdf" download class="cv-download-btn">Download CV</a>
+                            <a href="#contact" class="contact-link">Contact Me</a>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="section-content">
+                <h2>About</h2>
             <p>I am a dedicated, enthusiastic self learner with a
                 passion for Software Engineering. I frequently enjoy
                 learning new things and trying to get better. Currently, I am
                 interested in Data Science. However, I would prefer
                 to begin my career as a Software Engineer.
             </p>
-        </Section>
+            </div>
+            
+        </section>
+        
+        <section id="academic">
+            <div class="section-content">
+                <h2>Academic Qualification</h2>
+                <ul class="academic-list">
+                    <li>
+                        <strong>BSc (Hons) Software Engineering</strong>
+                        <p>University of Kelaniya (2021 - 2025)</p>
+                        <p>CGPA: 3.62</p>
+                    </li>
+                    <li>
+                        <strong>Ramanathan Hindu Ladies College, Colombo-04</strong>
+                        <p>Physical Science Stream (2016-2019)</p>
+                        <p>A/L results: Combined Mathematics: A, Chemistry: B, Physics: C</p>
+                    </li>
+                    <li>
+                        <strong>St. Anthony's Balika Maha Vidyalaya, Colombo-03</strong>
+                        <p>Grade 1 to Ordinary Level (2005-2016)</p>
+                        <p>O/L results: 5A B 3C</p>
+                        <p>Activities: Junior Prefect (2014 - 2015)</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-        <Section id="contact">
-            <h2>Contact Me</h2>
-            <li>99dinuraja@gmail.com</li>
-            <li><a href="www.linkedin.com/in/dineshika-sivapalaraja-b05172233">LinkedIN</a></li>
-            <li><a href="https://github.com/DineshikaSivapalaraja">GitHub</a></li>
-            <li><a href="https://medium.com/@dinraja17">Medium</a></li>
-        </Section>
-
-
-
-        <Section id="academic">
-            <h2>Academic Qualification</h2>
-            <ul>
-                <li>BSc(Hons) Software Engineering<br>
-                     University of Kelaniya(2021 - 2025)<br>
-                     CGPA: 3.62 
-                </li>
-
-                 <li>Ramanathan Hindu Ladies College, Colombo-04.<br>
-                    Physical Science Stream(2016-2019)<br>
-                    A/L results: Combined Mathematics: A, Chemistry: B, Physics: C
-                </li>
-
-                <li>St. Anthony's Balika Maha Vidyalaya, Colombo-03.<br>
-                    Grade 1 to Ordinary Level(2005-2016)<br>
-                    O/L results: 5A B 3C<br>
-                    Activities: Junior Prefect(2014-2015)
-                </li>  
-            </ul>    
-        </Section>
-
+        <section id="experience">
+            <div class="section-content">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>Volunteering Experience</h3>
+                    <ul>
+                        <li>
+                            <strong>Organizing Committee Member (Finance Team)</strong>
+                            <p>"Unravel" event organized by IEEE Student Branch of University of Kelaniya and SLIIT (Nov 2022 to Jan 2023)</p>
+                        </li>
+                        <li>
+                            <strong>Organizing Committee Member (Finance Coordinator)</strong>
+                            <p>"Nethsuwa" Project organized by Leo Club of University of Kelaniya (April 2023 to May 2023)</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
         <Section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/DineshikaSivapalaraja/My_Portfolio.git">Personal Portfolio</a>
-                    <p>I constructed a single page portfolio about my profile.<br>Technologies: HTML, CSS, and JavaScript</p>
-                </li>
-                    
-                <li><a href="https://github.com/DineshikaSivapalaraja/EPlanet.git">EPlanet</a>
-                    <p>Created an ecommerce platform with a focus on
-                     API integration between frontend and backend.<br>Technologies: Java, Spring boot,JavaScript(React)</p>
-                </li>
+                <h2 class="title">Projects</h2>
+                <div class="projects-container">
 
-                <li><a href="https://github.com/DineshikaSivapalaraja/GPA_Calculator.git">GPA_Calculator</a>
-                    <p>I created Manual GPA Calculator using Java.</p>
-                </li>
-
-                <li><a href="https://github.com/DineshikaSivapalaraja/PyCal.git">PyCal</a>
-                    <p>I created this Calculator with Basic Python concepts.</p>
-                </li>
-
-                <li><a href="https://github.com/DineshikaSivapalaraja/Build_OS.git">Build_OS</a>
-                    <p>Written a small Operating system to show the Hardware information of the Computer.</p>
-                </li>
-             </ul>
+                <div class="project">
+                    <img src="\Assets\portFolioN.png" alt="Project 1" class="project-img"/>
+                    <h2 class="project-title">My Portfolio Page</h2>
+                    <a class="project-btn" href="https://github.com/DineshikaSivapalaraja/My_Portfolio.git">GitHub</a>  
+                </div>
+    
+                <div class="project">
+                    <img src="\Assets\Ecommerce.png" alt="Project 2" class="project-img"/>
+                    <h2 class="project-title">EPlanet</h2>
+                    <a class="project-btn" href="https://github.com/DineshikaSivapalaraja/EPlanet.git">GitHub</a> 
+                </div>
+    
+                <div class="project">
+                        <img src="\Assets\GPA_CAL.jpg" alt="Project 3" class="project-img"/>
+                    <h2 class="project-title">GPA Calculator</h2>
+                    <a class="project-btn" href="https://github.com/DineshikaSivapalaraja/GPA_Calculator.git">GitHub</a> 
+                </div>
+    
+                <div class="project">
+                    <img src="\Assets\OS.jpg" alt="Project 4" class="project-img"/>
+                    <h2 class="project-title">Build OS</h2>
+                    <a class="project-btn" href="https://github.com/DineshikaSivapalaraja/Build_OS.git">GitHub</a>  
+                </div>
+    
+                <div class="project">
+                    <img src="\Assets\PyCAL.jpg" alt="Project 5" class="project-img"/>
+                    <h2 class="project-title">PyCal</h2>
+                    <a class="project-btn" href="https://github.com/DineshikaSivapalaraja/PyCal.git">GitHub</a>  
+                </div>
+            </div>
+            </div>
         </Section>
+           
+        <section id="activities">
+            <div class="section-content">
+                <h2>Extra-Curricular Activities</h2>
+                <ul class="activities-list">
+                    <li>
+                        <strong>Executive Committee Member</strong>
+                        <p>Software Engineering Student Association (2023/2024), University of Kelaniya.</p>
+                    </li>
+                    <li>
+                        <strong>Executive Board Finance and Relational Industry Lead</strong>
+                        <p>Computer Society Chapter, University of Kelaniya (2023/2024).</p>
+                    </li>
+                    <li>
+                        <strong>IEEE Member</strong>
+                        <p>Student Branch of University of Kelaniya (2023 to Present).</p>
+                    </li>
+                    <li>
+                        <strong>Leo Member</strong>
+                        <p>Leo Club at University of Kelaniya (2023 to Present).</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-        <Section id="activities">
-            <h2>Extra Curricular Activities</h2>
-            <ul>
-                <li>Executive Committee Member of Software
-                    Engineering Student Association(2023/2024)
-                    University of Kelaniya.
-                </li>
-
-                <li>Executive board Finance and Relational Industry Lead of Computer Society Chapter 
-                    University of Kelaniya. (2023/2024)
-                </li>
-
-                <li>IEEE Member Student branch of University of
-                    Kelaniya.(2023 to Present)
-                    <ul>
-                        <li>Activity: OC Member(Finance team) in "Unravel" event
-                            organized by IEEE UOK and SLIIT(2023)</li>
+        <section id="skills">
+            <h2 class="title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3 class="skill-title">Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">Programming Languages: C, Java, Python</li>
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">Database Management: SQL + MYSQL</li>
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">Web Development: HTML, CSS</li>
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">Microsoft Office: Excel, Word and PowerPoint</li>
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">PowerBI</li>
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">Version Control: GIT, GitHub</li>
                     </ul>
-                </li>
-
-                <li>Leo Member of Leo Club at University of Kelaniya(2023 to Present)
-                    <ul>
-                        <li>Activity: OC Member(Finance coordinator) of "Nethsuwa" Project(2023)</li>
+                </div>
+                <div class="skill">
+                    <h3 class="skill-title">Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">Communication
+                            <ul class="sub-list">
+                                <li>English: Professional Proficiency</li>
+                                <li>Tamil: Native</li>
+                                <li>Sinhala: Limited Proficiency</li>
+                            </ul>
+                        </li>
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">Team worker</li>
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">Leadership</li>
+                        <li><img src="\Assets\checkmark.png" class="skill-icon">Decision Making</li>
                     </ul>
-                </li>
-            </ul> 
-        </Section>
+                </div>
+            </div>
+        </section>
 
-        <Section id="skills">
-            <h2>Skills</h2>
+        <section id="interests-hobbies">
+            <div class="section-content">
+                <h2 class="section-title">Interests & Hobbies</h2>
+                <div class="interests-hobbies-container">
+                    <div class="interests">
+                        <h3>Interests</h3>
+                        <ul class="list">
+                            <li><span class="symbol">&#128218;</span> Learning new skills </li>
+                            <li><span class="symbol">&#127775;</span> Travelling </li>
+                            <li><span class="symbol">&#127793;</span> Creativity </li>
+                            <li><span class="symbol">&#128578;</span> Fashion</li>
+                        </ul>
+                    </div>
+                    <div class="hobbies">
+                        <h3>Hobbies</h3>
+                        <ul class="list">
+                            <li><span class="symbol">&#9825;</span> Watching Movies</li>
+                            <li><span class="symbol">&#9835;</span> Listening to Music</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>Programming Languages: C, Java, Python</li>
-                <li>Database Management: SQL + MYSQL</li>
-                <li>Web Development: HTML, CSS</li>
-                <li>Microsoft Office: Excel, Word and PowerPoint</li>
-                <li>PowerBI</li>
-                <li>Version Control: GIT, GitHub</li>
-            </ul>
-
-            <h3>Soft Skills</h3>
-            <ul>
-                <li>Communication<ul>
-                    <li>English: Professional Proficiency</li>
-                    <li>Tamil: Native</li>
-                    <li>Sinhala: Limited Proficiency</li>
-                </ul> </li>
-                <li>Team worker</li>
-                <li>Leadership </li>
-                <li>Decision Making</li>
-            </ul>
-        </Section>
-
-        <Section id="interests">
-            <h2>Interests</h2>
-            <ul>
-                <li>Acquiring Fresh Knowledge</li>
-                <li>Travelling</li>
-                <li>Making Handcrafts </li>
-                <li>Shopping and Personal Style</li>
-            </ul> 
-        </Section>
-
-        <Section id="hobbies">
-            <h2>Hobbies</h2>
-            <ul>
-                <li>Watching Movies</li>
-                <li>Listening to Music</li>
-            </ul>  
-        </Section>
-
+        <section id="other"> </section>
+                
+        <section id="contact">
+            <div class="contact-container">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="\Assets\email.png" alt="Email icon" class="contact-icon">
+                        <p><a href="mailto:99dinuraja@gmail.com">99dinuraja@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="\Assets\linkedin.png" alt="LinkedIn icon" class="contact-icon">
+                        <p><a href="https://www.linkedin.com/in/dineshika-sivapalaraja-b05172233/">LinkedIn</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <img src="\Assets\medium1.png" alt="Medium icon" class="contact-icon">
+                        <p><a href="https://medium.com/@dinraja17">Medium</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <footer>
-            <p>&copy; Dineshika Sivapalaraja 2023. All rights reserved.</p>
-            <!-- <p>Contact: 99dinuraja@gmail.com</p>
-            <p>Connect me on : <a href="www.linkedin.com/in/dineshika-sivapalaraja-b05172233">LinkedIN</a></p> -->
+            <p><b>&copy; Dineshika Sivapalaraja 2023. All rights reserved.</b></p>
         </footer>
 
         <script src="script.js"></script>
