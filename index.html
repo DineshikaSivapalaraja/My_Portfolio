@@ -9,24 +9,27 @@
 
     <body>
 
-        <nav id="desk-nav" class="h-nav">
-            <!-- <div id="pro">Dineshika</div>  -->
-            <div class="h-menu">
-            <ul class="nav_link" id="menu-links">
+        <nav class="nav">
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#academic">ACADEMIC</a></li>
                 <li><a href="#experience">EXPERIENCE</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#activities">EXTRA-CURRICULAR</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#other">OTHERS</a>
-                    <ul class="dropdown">
+                <li class="has-dropdown">
+                    <a href="#other">OTHERS</a>
+                    <ul class="sub-menu">
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#interests-hobbies">Interests and Hobbies</a></li>
+                        <li><a href="#interests-hobbies">Interests<br>& Hobbies</a></li>
                     </ul>
                 </li>
             </ul>
-            </div>  
         </nav>
 
         <section id="profile">
@@ -54,8 +57,7 @@
                 interested in Data Science. However, I would prefer
                 to begin my career as a Software Engineer.
             </p>
-            </div>
-            
+            </div>    
         </section>
         
         <section id="academic">
@@ -101,9 +103,9 @@
             </div>
         </section>
         
-        <Section id="projects">
-                <h2 class="title">Projects</h2>
-                <div class="projects-container">
+        <section id="projects">
+            <h2 class="title">Projects</h2>
+            <div class="projects-container">
 
                 <div class="project">
                     <img src=".\Assets\portFolioN.png" alt="Project 1" class="project-img"/>
@@ -134,10 +136,10 @@
                     <h2 class="project-title">PyCal</h2>
                     <a class="project-btn" href="https://github.com/DineshikaSivapalaraja/PyCal.git">GitHub</a>  
                 </div>
+
             </div>
-            </div>
-        </Section>
-           
+        </section>
+        
         <section id="activities">
             <div class="section-content">
                 <h2>Extra-Curricular Activities</h2>
@@ -244,8 +246,7 @@
             <p><b>&copy; Dineshika Sivapalaraja 2023. All rights reserved.</b></p>
         </footer>
 
-        <script src="script.js"></script>
-        
-    </body>
+        <script src="script.js"></script>   
 
+    </body>
 </html>
