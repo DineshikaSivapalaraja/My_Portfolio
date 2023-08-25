@@ -60,7 +60,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Set each section viewport height */
+    height: 100vh; 
     padding: 60px 0;
     text-align: center;
 }
@@ -78,6 +78,10 @@ section {
     color: #333;
     margin-bottom: 20px;
 }
+.section-container {
+    overflow: hidden;
+    height: auto;
+}
 
 h2, h3 {
     font-size: 2rem;
@@ -88,6 +92,7 @@ h2, h3 {
 #profile {
     background-color: #042345 /*#c88282*/;
     padding: 60px 0;
+    height: 100vh;
 }
 
 .profile-container {
@@ -172,19 +177,13 @@ header p {
     opacity: 0.8;
 }
 
-/* Other section styles */
-/* #other {
-    background-color: #f9f9f9;
-    padding: 60px 0;
-    text-align: center;
-} */
-
 /* About section styles */
 #about {
     background-color: #2f4051;
     padding: 40px 0;
     text-align: center;
     color:#b8d2ec;
+    height: 100vh;
 }
 
 .section-content {
@@ -215,6 +214,10 @@ header p {
 #academic ul {
     list-style: none;
     padding: 0;
+    height: 100vh;
+    justify-content: center;
+    /* text-align: center; */
+    /* margin: 10px; */
 }
 
 #academic li {
@@ -235,6 +238,7 @@ header p {
     padding: 40px 0;
     text-align: center;
     color: rgb(209, 195, 195);
+    height: 100vh;
 }
 
 .experience-item {
@@ -268,7 +272,7 @@ header p {
 
 .experience-item strong {
     font-weight: bold;
-    color:black;
+    color:white;    /*black*/
     font-size: 1.4rem;
 }
 
@@ -308,27 +312,28 @@ header p {
     padding: 40px 0;
     text-align: center;
     background-color: #2f4051;
-    color: rgb(209, 195, 195); 
+    color: rgb(209, 195, 195);
+    height:100vh; 
 }
 
 .activities-list {
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     text-align: left;
     list-style: none;
     padding: 0;
     /* list-style:disc; */
-    /* font-size: 2.2rem; */
+    font-size: 2.2rem;
 }
 
 .activities-list li {
     margin-bottom: 30px;
-    /* font-size: 1.3rem; */
+    font-size: 1.3rem;
     border:1px solid white;
     border-radius: 5px;
     background-color: rgb(209, 195, 195); 
     width: 100%;
-    /* #84b4e9;; */
+    text-align: center;
 }
 
 .activities-list strong {
@@ -359,6 +364,7 @@ header p {
     .activities-list li {
         margin-bottom: 70px;
         font-size: 2.5rem;
+        margin-bottom: 10px;
     }
 
     .activities-list strong {
@@ -467,6 +473,7 @@ header p {
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
+    /* height: 100vh; */
 }
 
 #interests-hobbies h2{
@@ -554,8 +561,9 @@ header p {
 #projects {
     background-color: rgb(209, 195, 195);
     color: #042345;
-    padding: 40px 0;
+    padding: 70px 0;
     text-align: center;
+    /* height: 100vh; */
 }
 
 .project-heading {
@@ -630,7 +638,7 @@ header p {
 }
 
 /* Projects Media queries for responsiveness */
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
     .projects-container {
         gap: 40px;
     }
@@ -700,8 +708,6 @@ header p {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    /* width: 45%;height: 50vh;width: 70vh; */
-    /* width: 100%; */
 }
 
 .skill-title {
@@ -870,7 +876,6 @@ footer{
 }
 
 /*Profile+ header responsiveness*/
-
 @media (max-width: 768px) {
     /* Navigation styles */
 .nav {
@@ -962,7 +967,7 @@ footer{
 }
 
 @media (max-width: 480px) {
-    header img {    /* Header styles */
+    header img {   
         max-width: 120px;
     }
     
@@ -970,7 +975,7 @@ footer{
         font-size: 1.8rem;
     }
     
-    .section-content {  /* Section content style */
+    .section-content {  
         width: 90%;
     }
 }
@@ -1079,14 +1084,6 @@ footer{
         font-size: 1.5rem;
     }
 }
-
-/* Set the section height and hide overflow */
-.section-container {
-    height: 100vh;
-    overflow: hidden;
-}
-
-
 
 
 
