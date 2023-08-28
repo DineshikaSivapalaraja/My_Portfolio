@@ -3,40 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
 }
-
 /* Navigation section styles */
 .nav {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color:#27303a;
 }
-
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-
 .nav-links li {
     position: relative;
 }
-
 .nav-links a {
     text-decoration: none;
     color: white;
     transition: color 0.3s;
 }
-
 .nav-links a:hover {
     color: #f34;
 }
-
+.name {
+    font-size: 2.5rem;
+    color: #84b4e9;
+    justify-content: center;
+    /* margin-bottom: 5%; */
+}
+.name:hover {
+    cursor: default;
+}
 .sub-menu {
     display: none;
     position: absolute;
@@ -46,11 +48,9 @@ body {
     width: 200px;
     z-index: 1;
 }
-
 .sub-menu li {
     padding: 10px;
 }
-
 .has-dropdown:hover .sub-menu {
     display: block;
 }
@@ -64,7 +64,6 @@ section {
     padding: 60px 0;
     text-align: center;
 }
-
 .section-content {
     width: 80%;
     margin: 0 auto;
@@ -72,7 +71,6 @@ section {
     font-size: 1.6rem; 
     line-height: 1.6;
 }
-
 .section-title {
     font-size: 3rem;
     color: #333;
@@ -82,7 +80,6 @@ section {
     overflow: hidden;
     height: auto;
 }
-
 h2, h3 {
     font-size: 2rem;
     margin-bottom: 20px;
@@ -90,11 +87,10 @@ h2, h3 {
 
 /*Profile + Header*/
 #profile {
-    background-color: #042345 /*#c88282*/;
+    background-color: #042345;
     padding: 60px 0;
     height: 100vh;
 }
-
 .profile-container {
     display: flex;
     justify-content: center;
@@ -102,37 +98,30 @@ h2, h3 {
     margin: 0 auto;
     padding: 0 20px;
 }
-
 header {
     display: flex;
     align-items: center;
 }
-
 header img {
     max-width: 300px;
     border-radius: 50%;
     margin-right: 30px;
 }
-
 .header-content {
     flex: 1;
 }
-
 .header-content h2 {
     font-size: 2.5rem;
     margin: 0;
     line-height: 1.2;
 }
-
 .header-content p {
     font-size: 1.2rem;
     margin: 10px 0;
 }
-
 .header-buttons {
     margin-top: 20px;
 }
-
 .cv-download-btn {
     display: inline-block;
     padding: 10px 20px;
@@ -142,7 +131,6 @@ header img {
     border-radius: 4px;
     margin-right: 20px;
 }
-
 .contact-link {
     color: #b8d2ec;
     text-decoration: none;
@@ -152,7 +140,6 @@ header img {
     padding: 10px 20px;
     margin-right: 20px;
 }
-
 .contact-link:hover {
     color: rgb(195, 15, 30)/* #f34*/;
 }
@@ -164,13 +151,11 @@ header {
     text-align: center;
     padding: 60px 0;
 }
-
 header h1 {
     font-size: 3rem;
     margin: 0;
     line-height: 1.2;
 }
-
 header p {
     font-size: 1.5rem;
     margin-top: 10px;
@@ -185,17 +170,14 @@ header p {
     color:#b8d2ec;
     height: 100vh;
 }
-
 .section-content {
     width: 70%;
     margin: 0 auto;
 }
-
 #about h2 {
     margin-bottom: 20px;
     font-size: 2.5rem;  
 }
-
 #about p {
     font-size: 2.0rem;    
     line-height: 1.6;
@@ -206,105 +188,60 @@ header p {
 #academic .section-content {
     padding: 20px;
 }
-
 #academic h2 {
     font-size: 2rem;
 }
-
 #academic ul {
     list-style: none;
     padding: 0;
     height: 100vh;
     justify-content: center;
-    /* text-align: center; */
-    /* margin: 10px; */
 }
-
 #academic li {
     margin-bottom: 20px;
 }
-
 #academic strong {
     font-weight: bold;
 }
-
 #academic p {
     margin: 0;
 }
 
 /* Experience section styles */
 #experience {
-    background-color:#2f4051/*#f9f9f9*/;
+    background-color:#2f4051;
     padding: 40px 0;
     text-align: center;
     color: rgb(209, 195, 195);
     height: 100vh;
 }
-
 .experience-item {
     width: 70%;
     margin: 0 auto;
     text-align: left;
 }
-
 #experience h2 {
     margin-bottom: 20px;
     font-size: 3.0rem; 
     color:#84b4e9;
 }
-
 .experience-item h3 {
     margin-bottom: 15px;
     font-size: 1.5rem;
     color:#b8d2ec;
 }
-
 .experience-item ul {
     padding-left: 20px;
     margin-bottom: 30px;
     font-size: 1.2rem;  
 }
-
 .experience-item li {
     margin-bottom: 10px;
-    /* font-size: 1.2rem; */
 }
-
 .experience-item strong {
     font-weight: bold;
     color:white;    /*black*/
     font-size: 1.4rem;
-}
-
-/* Experience Media queries for responsiveness */
-@media (max-width: 1200px) {
-    .experience-item {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .experience-item {
-        width: 90%;
-    }
-}
-
-@media (max-width: 479px) {
-    .experience-item {
-        width: 100%;
-    }
-
-    .experience-item h3 {
-        font-size: 1.3rem;
-    }
-
-    .experience-item ul {
-        font-size: 1.1rem;
-    }
-
-    .experience-item strong {
-        font-size: 1.2rem;
-    }
 }
 
 /* Extra-Curricular Activities section styles */
@@ -315,17 +252,14 @@ header p {
     color: rgb(209, 195, 195);
     height:100vh; 
 }
-
 .activities-list {
     width: 100%;
     margin: 0 auto;
     text-align: left;
     list-style: none;
     padding: 0;
-    /* list-style:disc; */
     font-size: 2.2rem;
 }
-
 .activities-list li {
     margin-bottom: 30px;
     font-size: 1.3rem;
@@ -335,70 +269,19 @@ header p {
     width: 100%;
     text-align: center;
 }
-
 .activities-list strong {
     font-weight: bold;
     font-size: 1.1rem;
     color:#042345;
 }
-
 .activities-list p {
     margin-top: 10px;
     font-size: 0.9rem;
     color: black;
 }
-
 #activities h2{
     font-size: 3.0rem;
     color:#84b4e9;
-}
-
-/* Activities Media queries for responsiveness */
-@media (min-width: 1201px) {
-    .activities-list li {
-        margin-bottom: 40px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1200px) {
-    .activities-list li {
-        margin-bottom: 70px;
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-
-    .activities-list strong {
-        font-size: 1.6rem;
-    }
-}
-
-@media (min-width: 401px) and (max-width: 768px) {
-    .activities-list li {
-        margin-bottom: 20px;
-    }
-
-    .activities-list strong {
-        font-size: 0.7rem;
-        font-weight: strong;
-    }
-
-    #activities h2 {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .activities-list li {
-        margin-bottom: 15px;
-    }
-
-    .activities-list strong {
-        font-size: 0.9rem;
-    }
-
-    #activities h2 {
-        font-size: 2.0rem;
-    }
 }
 
 /* Academic Qualification section styles */
@@ -408,7 +291,6 @@ header p {
     background-color: rgb(209, 195, 195)/*#2f4051*/;
     color:#0a3869 ; 
 }
-
 .academic-list {
     width: 70%;
     margin: 0 auto;
@@ -416,19 +298,16 @@ header p {
     list-style: none;
     padding: 0;
 }
-
 .academic-list li {
     margin-bottom: 30px;
     /* font-size: 1.8rem; */
     position: relative;
     list-style:disc;
 }
-
 .academic-list strong {
     font-weight: bold;
     font-size: 1.5rem;
 }
-
 #academic h2{
     font-size: 3.0rem;
 }
@@ -439,25 +318,6 @@ header p {
     font-weight: bold;
 }
 
-/* Academic Media queries for responsiveness */
-@media (max-width: 1200px) {
-    .academic-list {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .academic-list {
-        width: 100%;
-    }
-}
-
-@media (max-width: 400px) {
-    .academic-list li {
-        margin-bottom: 20px;
-    }
-}
-
 /* Interests and Hobbies section styles */
 #interests-hobbies {
     background-color: #2f4051;
@@ -465,7 +325,6 @@ header p {
     padding: 40px 0;
     text-align: center;
 }
-
 .interests-hobbies-container {
     display: flex;
     justify-content: center;
@@ -473,19 +332,14 @@ header p {
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
-    /* height: 100vh; */
 }
-
 #interests-hobbies h2{
     font-size:3.0rem;
     color:#84b4e9;
 }
-
 .interests,.hobbies {
-    /* flex: 1; */
     text-align: left;
 }
-
 .interests h3,.hobbies h3 {
     font-size: 2rem; 
     color:#042345; /*rgb(201, 18, 49); */
@@ -493,68 +347,19 @@ header p {
     background-color: #2f4051 ;
     padding: 10px;
 }
-
 .list {
     list-style: none;
     padding: 0;
     font-size: 1.3rem; 
     line-height: 1.6;
 }
-
 .list li {
     margin-bottom: 15px; 
 }
-
 .symbol {
     color: pink;
     margin-right: 10px;
     font-size: 1.5rem; 
-}
-
-/* Media query */
-@media (min-width: 1201px) {
-    .interests-hobbies-container {
-        gap: 40px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1200px) {
-    .interests-hobbies-container {
-        gap: 30px;
-    }
-}
-
-@media (min-width: 401px) and (max-width: 768px) {
-    .interests-hobbies-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .interests,
-    .hobbies {
-        width: 100%;
-    }
-
-    .interests h3,
-    .hobbies h3 {
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .interests-hobbies-container {
-        gap: 15px;
-    }
-
-    .interests,
-    .hobbies {
-        width: 100%;
-    }
-
-    .interests h3,
-    .hobbies h3 {
-        font-size: 1.6rem;
-    }
 }
 
 /* Projects section styles */
@@ -563,20 +368,16 @@ header p {
     color: #042345;
     padding: 70px 0;
     text-align: center;
-    /* height: 100vh; */
 }
-
 .project-heading {
     margin-bottom: 20px;
     text-align: center;
     margin-left: 10%;
 }
-
 .project-heading .title {
     font-size: 3.0rem;
     color: #042345;
 }
-
 .projects-container {
     display: flex;
     flex-wrap: wrap;
@@ -585,7 +386,6 @@ header p {
     max-width: 2000px;
     margin: 0 auto;
 }
-
 .project {
     /* flex: 0 0 calc(20% - 20px); Display 5 projects in the same horizontal line */
     flex: 0 0 calc(30% - 20px); /* Display 5 projects in 2 separate rows*/
@@ -598,14 +398,12 @@ header p {
     display: flex;
     flex-direction: column;
 }
-
 .project-img {
     width: 100%;
     max-height: 100px;
     border-radius: 5px;
     margin-bottom: 15px;
 }
-
 .project-details {
     flex: 1;
     display: flex;
@@ -613,14 +411,12 @@ header p {
     justify-content: space-between;
     padding: 10px 0;
 }
-
 .project-title {
     font-size: 1.0rem;
     color: rgb(249, 156, 163);
     margin: 0;
     margin-bottom: 10px;
 }
-
 .project-btn {
     display: block;
     padding: 6px 0;
@@ -632,44 +428,8 @@ header p {
     text-decoration: none;
     transition: background-color 0.3s ease-in-out;
 }
-
 .project-btn:hover {
     background-color: #d58394;
-}
-
-/* Projects Media queries for responsiveness */
-@media (min-width: 1200px) {
-    .projects-container {
-        gap: 40px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1200px) {
-    .projects-container {
-        gap: 30px;
-    }
-}
-
-@media (min-width: 401px) and (max-width: 768px) {
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .project-heading .title {
-        font-size: 2.5rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .projects-container {
-        gap: 15px;
-    }
-
-    .project-heading .title {
-        font-size: 2.0rem;
-    }
 }
 
 /* Skills section styles */
@@ -679,27 +439,21 @@ header p {
     padding: 40px 0;
     text-align: center;
 }
-
 #skills h2{
     font-size: 3.0rem;
     margin-bottom: 20px;
 }
-
 #skills h3{
     color:rgb(209, 195, 195);
     font-size: 1.8rem;
 }
-
 .skills-container {
     display: flex;
-    /* flex-direction: column;  */
-    /* justify-content: center;*/
     justify-content: space-between;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .skill {
     flex: 1;
     color: #b8d3f0;
@@ -709,86 +463,34 @@ header p {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .skill-title {
     font-size: 2.2rem; 
     color: #d4e1ee;
     margin: 0;
     margin-bottom: 20px;
 }
-
 .skill-list {
     list-style: none;
     padding: 10px;
     text-align: left;
     font-size: 1.0rem; 
 }
-
 .skill-list li{
     margin-bottom: 10px;
 }
-
 .skill-icon {
     width: 10px; 
     height: 10px; 
     margin-right: 10px;
 }
-
 .sub-list {
     list-style: disc;
     margin-top: 10px;
     padding-left: 20px;
 }
-
 .sub-list li {
     margin-bottom: 10px;
     font-size: 1.0rem; 
-}
-
-
-/* Skills Media query for screens up to 768px */
-@media (max-width: 768px) {
-    .skills-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .skill {
-        margin-bottom: 20px;
-        height: auto;
-    }
-
-    .skill-title {
-        font-size: 2rem;
-    }
-}
-
-/* Media query for screens up to 480px */
-@media (max-width: 480px) {
-    .skills-container {
-        gap: 20px;
-    }
-
-    .skill {
-        width: 100%;
-        height: auto;
-        text-align: center;
-    }
-
-    .skill-title {
-        font-size: 1.8rem;
-    }
-}
-
-/* Media query for screens between 769px and 1200px */
-@media (min-width: 769px) and (max-width: 1200px) {
-    .skills-container {
-        justify-content: space-between;/* space-evenly; */
-    }
-
-    .skill {
-        width: 45%;
-    }
 }
 
   /* Contact section styles */
@@ -797,7 +499,6 @@ header p {
     padding: 40px 0;
     text-align: center;
 }
-
 .contact-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -808,35 +509,28 @@ header p {
     background-color: #042345;
     text-align: center;
 }
-
 .section-title {
     font-size: 3.0rem;
     color:#84b4e9;
     margin-bottom: 20px;
 }
-
 .contact-info {
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
-
 .contact-item {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
     margin-top: 5px;
 }
-
 .contact-icon {
     width: 40px;
     height: 40px;
     margin-right: 10px;
-    /* padding-left: 5px; */
-
 }
-
 .contact-item a {
     text-decoration: none;
     /* color: #333;  */
@@ -844,11 +538,11 @@ header p {
     transition: color 0.3s ease-in-out;
     padding: 50px 0;
 }
-
 .contact-item a:hover {
     color: #1772d3;
 }
 
+/* Footer section */
 footer{
     height: 10vh;
     padding: 25px 0;
@@ -862,15 +556,12 @@ footer{
 #academic {
     display: none;
 }
-
 #academic.show {
     display:block;
 }
-
 #activities {
     display: none;
 }
-
 #activities.show {
     display:block;
 }
@@ -879,27 +570,29 @@ footer{
 @media (max-width: 768px) {
     /* Navigation styles */
 .nav {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px 10px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px 40px 25px;
     margin: 0 5%;
-    background-color:#c1d3e8;
-        
+    background-color: #c1d3e8;
 }
-
+.name{
+    color:#042345;
+    font-weight: bold;
+}
 .nav-toggle {
     display: block;
     cursor: pointer;
-}
-
+    margin-right: 25px; 
+} 
 .bar {
     display: block;
-    width: 25px;
-    height: 5px;
+    width: 35px;
+    height: 10px;
     margin: 5px 0;
     background-color: white;
 }
-
 .nav-links {
     display: none;
     flex-direction: column;
@@ -912,26 +605,21 @@ footer{
     text-align: center;
     margin-left: 5%;
 }
-
 .nav-links.active {
     display: flex;
 }
-
 .nav-links li {
     position: relative;
 }
-
 .sub-menu {
     position: static;
     display: none;
     background-color: transparent;
     width: auto;
 }
-
 .sub-menu.active {
     display: block;
 }
-
 /* Drop down list  */
 .has-dropdown:hover .sub-menu {
     display: block;
@@ -941,12 +629,10 @@ footer{
     text-align: left;
     box-shadow: none;
 }
-
 /* Header styles */
 header img {
     max-width: 150px;
 }
-
 .header-content h2 {
     font-size: 2rem;
 }
@@ -955,26 +641,21 @@ header img {
 .section-content {
     width: 80%;
 }
-
 section {
     margin: 0 5%;
 } 
-
 footer{
     margin: 0 5%;
 }
-
 }
 
 @media (max-width: 480px) {
     header img {   
         max-width: 120px;
     }
-    
     .header-content h2 {
         font-size: 1.8rem;
     }
-    
     .section-content {  
         width: 90%;
     }
@@ -985,16 +666,201 @@ footer{
     #about {
         padding: 20px 0;
     }
-
     .section-content {
         width: 90%;
     }
-
     #about h2 {
         font-size: 2rem;
     }
-
     #about p {
+        font-size: 1.6rem;
+    }
+}
+
+/* Academic Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .academic-list {
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .academic-list {
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .academic-list li {
+        margin-bottom: 20px;
+    }
+}
+
+/* Projects Media queries for responsiveness */
+@media (min-width: 1200px) {
+    .projects-container {
+        gap: 40px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .projects-container {
+        gap: 30px;
+    }
+}
+@media (min-width: 401px) and (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .project-heading .title {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 400px) {
+    .projects-container {
+        gap: 15px;
+    }
+    .project-heading .title {
+        font-size: 2.0rem;
+    }
+}
+
+/* Experience Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .experience-item {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .experience-item {
+        width: 90%;
+    }
+}
+@media (max-width: 479px) {
+    .experience-item {
+        width: 100%;
+    }
+    .experience-item h3 {
+        font-size: 1.3rem;
+    }
+    .experience-item ul {
+        font-size: 1.1rem;
+    }
+    .experience-item strong {
+        font-size: 1.2rem;
+    }
+}
+
+/* Activities Media queries for responsiveness */
+@media (min-width: 1201px) {
+    .activities-list li {
+        margin-bottom: 40px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .activities-list li {
+        margin-bottom: 70px;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .activities-list strong {
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 401px) and (max-width: 768px) {
+    .activities-list li {
+        margin-bottom: 20px;
+    }
+    .activities-list strong {
+        font-size: 0.7rem;
+        font-weight: strong;
+    }
+    #activities h2 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 400px) {
+    .activities-list li {
+        margin-bottom: 15px;
+    }
+    .activities-list strong {
+        font-size: 0.9rem;
+    }
+    #activities h2 {
+        font-size: 2.0rem;
+    }
+}
+
+/* Skills Media query */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skill {
+        margin-bottom: 20px;
+        height: auto;
+    }
+    .skill-title {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 480px) {
+    .skills-container {
+        gap: 20px;
+    }
+    .skill {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .skill-title {
+        font-size: 1.8rem;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .skills-container {
+        justify-content: space-between;/* space-evenly; */
+    }
+    .skill {
+        width: 45%;
+    }
+}
+
+/* Media query for interests and hobbies */
+@media (min-width: 1201px) {
+    .interests-hobbies-container {
+        gap: 40px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+    .interests-hobbies-container {
+        gap: 30px;
+    }
+}
+@media (min-width: 401px) and (max-width: 768px) {
+    .interests-hobbies-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .interests,
+    .hobbies {
+        width: 100%;
+    }
+    .interests h3,
+    .hobbies h3 {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 400px) {
+    .interests-hobbies-container {
+        gap: 15px;
+    }
+    .interests,
+    .hobbies {
+        width: 100%;
+    }
+    .interests h3,
+    .hobbies h3 {
         font-size: 1.6rem;
     }
 }
@@ -1004,86 +870,68 @@ footer{
     .contact-info {
         gap: 40px;
     }
-
     .contact-icon {
         width: 40px;
         height: 40px;
     }
-
     .section-title {
         font-size: 3.0rem;
     }
-
     .contact-item p {
         font-size: 1.2rem;
     }
 }
-
 @media (min-width: 769px) and (max-width: 1200px) {
     .contact-info {
         gap: 30px;
     }
-
     .contact-icon {
         width: 40px;
         height: 40px;
     }
-
     .section-title {
         font-size: 3.0rem;
     }
-
     .contact-item p {
         font-size: 2.5rem;
     }
 }
-
 @media (min-width: 401px) and (max-width: 768px) {
     .contact-container {
         width: 90vw;
         padding: 20px;
     }
-
     .section-title {
         font-size: 2.0rem;
         margin-bottom: 15px;
     }
-
     .contact-info {
         flex-direction: column;
         gap: 20px;
     }
-
     .contact-icon {
         width: 30px;
         height: 30px;
         margin-right: 0;
     }
-
     .contact-item p {
         font-size: 1.8rem;
     }
 }
-
 @media (max-width: 400px) {
     .contact-info {
         gap: 15px;
     }
-
     .contact-icon {
         width: 25px;
         height: 25px;
     }
-
     .section-title {
         font-size: 2.0rem;
         margin-bottom: 15px;
     }
-
     .contact-item p {
         font-size: 1.5rem;
     }
 }
-
-
 
